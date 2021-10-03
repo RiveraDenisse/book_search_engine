@@ -12,7 +12,8 @@ import Navbar from "./components/Navbar";
 
 //establish a new link to GraphQL server
 const httpLink = createHttpLink({
-  uri: "http://localhost:3001/graphql",
+  //uniform resource identifier
+  uri: "/graphql",
 });
 
 //use ApolloClient() constructor to instantiate Apollo Client instance and create the connection to the API endpoint
